@@ -7,5 +7,5 @@
 */
 
 require('./gulpfiles/watch')
-require('./gulpfiles/dist')
+require('./gulpfiles/dist-deploy')
 require('./gulpfiles/build')

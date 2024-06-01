@@ -227,20 +227,19 @@ function copyFavicon() {
         .pipe(gulp.dest(paths.dist.base.dir));
 }
 
-function copyCNAME() {
-    return gulp
-        .src(paths.src.base.dir + "/CNAME")
-        .pipe(gulp.dest(paths.dist.base.dir));
-}
-
 function clean() {
     return del(paths.dist.base.dir, {force: true});
 }
 
-gulp.task('dist', gulp.series(clean, fileInclude, CSS, minCSS, minJS, svgCompiler, copy, copyNode, copySkipedFiles, copyDependencies, copyFavicon, copyCNAME));
+gulp.task('dist', gulp.series(clean, fileInclude, CSS, minCSS, minJS, svgCompiler, copy, copyNode, copySkipedFiles, copyDependencies, copyFavicon));
 
 var ghPages = require('gh-pages');
 
 gulp.task('deploy', function () {
-  return ghPages.publish('dist')
+  return ghPages.publish('dist', { 
+    nojekyll: true, 
+    cname: 'routing.instruktori.cz',
+    message: 'Deploy web using module gh-pages',
+    history: false
+    })
 });
