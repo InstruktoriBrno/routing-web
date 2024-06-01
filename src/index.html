@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+
+@@include("@@autopath/partials/header.html")
+
+<body data-hs-scrollspy-options='{ "target": "#hero" }'>
+  <!-- ========== HEADER ========== -->
+  @@include("@@autopath/partials/navbar.html")
+  <!-- ========== END HEADER ========== -->
+  
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    
+    @@include("@@autopath/partials/hero.html")
+    @@include("@@autopath/partials/about.html")
+    @@include("@@autopath/partials/practicalities.html")
+    @@include("@@autopath/partials/signup.html")
+    @@include("@@autopath/partials/faq.html")
+    @@include("@@autopath/partials/team.html")
+    
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== FOOTER ========== -->
+  @@include("@@autopath/partials/footer.html")
+  <!-- ========== END FOOTER ========== -->
+  
+  <!-- JS Global Compulsory @@deleteLine:build -->
+  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="@@autopath/node_modules/typed.js/dist/typed.umd.js"></script>
+  <script src="@@autopath/assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+  
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.typed.js"></script>
+  
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+      
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+      
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      HSCore.components.HSTyped.init('.js-typedjs')
+      
+      // INITIALIZATION OF SCROLLSPY
+      // =======================================================
+      new bootstrap.ScrollSpy(document.body, {
+        target: '#navbarSettings',
+        offset: 10
+      })
+      
+      //new HSScrollspy('#navbarVerticalNavMenuEg', {
+        //  breakpoint: 'lg'
+        //})
+        
+      })()
+    </script>
+  </body>
+  </html>
+  

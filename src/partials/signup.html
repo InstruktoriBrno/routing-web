@@ -1,0 +1,53 @@
+<!-- Content -->
+<div class="d-md-flex js-scrollspy" id="signup">
+  <div class="container d-md-flex align-items-md-center content-space-2 content-space-lg-3">
+    <div class="row justify-content-md-between align-items-md-center flex-grow-1">
+      <div class="col-9 col-md-5 mb-5 mb-md-0">
+        <img class="img-fluid" src="@@autopath/assets/svg/signup.svg" alt="člověk s megafonem">
+      </div>
+      <!-- End Col -->
+      
+      <div class="col-md-6">
+        <!-- Heading -->
+        <div class="mb-4">
+          <span class="text-cap">Přihlásit tým</span>
+          <h2 class="mb-3">Předregistrace týmů</h3>
+            <p class="mb-5">Zaregistruj se jako kapitán týmu. Až otevřeme plnou registraci, ozveme se ti s platbou a žádostí o doplnění informací o ostatních členech.</p>
+          </div>
+          <!-- End Heading -->
+          
+          <!-- gForm embedded based on https://blog.webjeda.com/google-form-customize/ and https://pqvst.com/2021/12/28/custom-google-forms/ -->
+          <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {
+            document.getElementById('registrationSuccessful2').style.display='flex';
+          }"></iframe>
+          <form method="post"  target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9muRySJJtI4lKmp6IEwdCKwcSBaPrV5qPR9i0h0VlZlicjA/formResponse">
+            <!-- Input Card -->
+            <div class="input-card input-card-sm border">
+              <div class="input-card-form">
+                <label for="subscribeForm" class="form-label visually-hidden">Email</label>
+                <input name="entry.595497343" type="email" class="form-control form-control-lg" id="subscribeForm" placeholder="Emailová adresa" aria-label="Enter email" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Registrovat se</button>
+            </div>
+            <p class="mt-1 fs-6">Pouze pro účely registrace, <a href="https://www.instruktori.cz/zasady-zpracovani-osobnich-udaju/" target="_blank">zásady zpracování osobních údajů</a>.</p>
+            <!-- End Input Card -->
+          </form>
+          <div class="mt-5 flex-row" id="registrationSuccessful2" style="display: none;">
+            <div class="svg-icon text-primary me-3">
+              @@include("../assets/icons/arr016.svg")
+            </div>
+            <div>
+              <h3 class="text-primary">
+                Předregistrace odeslána, děkujeme.
+              </h3>
+              <p>Potvrzení o předregistraci jsme vám odeslali na email.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+  </div>
+  <!-- End Content -->
