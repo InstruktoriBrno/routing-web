@@ -27,7 +27,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-touch": "^1.0.1",
     "gulp-uglify-es": "^3.0.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "puppeteer": "^15.4.0",
     "sass": "^1.53.0",
     "wnumb": "^1.2.0"
