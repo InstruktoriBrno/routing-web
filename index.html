@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta and OG tags -->
+  <title>The Routing Game</title>
+  <meta name="description" content="Týmová outdoorová městská hra na motivy směrování v počítačových sítích.">
+  <meta property="og:title" content="The Routing Game">
+  <meta property="og:description" content="Týmová outdoorová městská hra na motivy směrování v počítačových sítích.">
+  <meta property="og:image" content="./assets/social/preview.png">
+  <meta property="og:url" content="https://routing.instruktori.cz">
+  <meta property="og:site_name" content="The Routing Game">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/social/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/social/favicon-32x32.png">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFDQ5RJGC2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JFDQ5RJGC2');
+</script>
+
+<body data-hs-scrollspy-options='{ "target": "#hero" }'>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
+    "fixMoment": 1000,
+    "fixEffect": "slide"
+  }'>
+
+    <div class="container">
+      <nav class="navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="#top" aria-label="Front">
+          <img class="navbar-brand-logo" src="./assets/svg/router.svg" alt="logo směrovače">
+          The Routing Game
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default text-primary">
+            <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.400024H1C0.4 0.400024 0 0.800024 0 1.40002V2.40002C0 3.00002 0.4 3.40002 1 3.40002H12C12.6 3.40002 13 3.00002 13 2.40002V1.40002C13 0.800024 12.6 0.400024 12 0.400024Z" fill="#035A4B" />
+              <path opacity="0.3" d="M15 8.40002H1C0.4 8.40002 0 8.00002 0 7.40002C0 6.80002 0.4 6.40002 1 6.40002H15C15.6 6.40002 16 6.80002 16 7.40002C16 8.00002 15.6 8.40002 15 8.40002ZM16 12.4C16 11.8 15.6 11.4 15 11.4H1C0.4 11.4 0 11.8 0 12.4C0 13 0.4 13.4 1 13.4H15C15.6 13.4 16 13 16 12.4ZM12 17.4C12 16.8 11.6 16.4 11 16.4H1C0.4 16.4 0 16.8 0 17.4C0 18 0.4 18.4 1 18.4H11C11.6 18.4 12 18 12 17.4Z" fill="#035A4B" />
+            </svg>
+
+          </span>
+          <span class="navbar-toggler-toggled text-primary">
+            <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.400024H1C0.4 0.400024 0 0.800024 0 1.40002V2.40002C0 3.00002 0.4 3.40002 1 3.40002H12C12.6 3.40002 13 3.00002 13 2.40002V1.40002C13 0.800024 12.6 0.400024 12 0.400024Z" fill="#035A4B" />
+              <path opacity="0.3" d="M15 8.40002H1C0.4 8.40002 0 8.00002 0 7.40002C0 6.80002 0.4 6.40002 1 6.40002H15C15.6 6.40002 16 6.80002 16 7.40002C16 8.00002 15.6 8.40002 15 8.40002ZM16 12.4C16 11.8 15.6 11.4 15 11.4H1C0.4 11.4 0 11.8 0 12.4C0 13 0.4 13.4 1 13.4H15C15.6 13.4 16 13 16 12.4ZM12 17.4C12 16.8 11.6 16.4 11 16.4H1C0.4 16.4 0 16.8 0 17.4C0 18 0.4 18.4 1 18.4H11C11.6 18.4 12 18 12 17.4Z" fill="#035A4B" />
+            </svg>
+
+          </span>
+        </button>
+        <!-- End Toggler -->
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">O hře</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#practicalities">Prakticky</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Organizátoři</a>
+              </li>
+
+              <!-- Button -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-transition" href="#signup">Příhlásit tým</a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+      <div class="alert alert-primary" role="alert">
+        Hra byla bohžel z důvodů mimo naši kontrolu přeložena na jaro 2025.
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+
+    <!-- Hero -->
+    <div class="gradient-y-gray d-lg-flex position-relative" id="top">
+      <div class="container d-lg-flex align-items-lg-center content-space-3 content-space-lg-0 min-vh-lg-100">
+        <!-- Heading -->
+        <div class="w-100">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-5">
+                <img class="hero-logo mb-3" src="./assets/svg/router.svg" alt="logo směrovače">
+                <h1 class="display-4 mb-4">
+                  The Routing Game.
+                </h1>
+                <p class="display-6 mb-4 typedjs-block">
+                  Možnost
+                  <span class="text-primary text-highlight-warning">
+                    <span class="js-typedjs" data-hs-typed-options='{
+                      "strings": ["zažít směrování v&nbsp;sítích.", "vytvořit nejlepší strategii.", "porazit studenty FIT&nbsp;VUT.", "stát se na chvíli směrovačem.", "poznat aktivní lidi v&nbsp;Brně.", "porazit studenty FI&nbsp;MUNI.", "dozvědět se jak (ne)funguje internet."],
+                      "typeSpeed": 75,
+                      "loop": true,
+                      "backSpeed": 30,
+                      "backDelay": 2000
+                    }'></span>
+                  </span>
+                </p>
+
+                <p class="lead">Týmová outdoorová městská hra na motivy směrování v&nbsp;počítačových sítích.</p>
+                <p class="lead">sobota na jaře 2025, Brno</p>
+              </div>
+
+              <div class="d-grid d-sm-flex gap-3">
+                <a class="btn btn-primary btn-transition px-6" href="#signup">Přihlásit tým</a>
+                <a class="btn btn-link" href="#about">O čem to bude? <i class="bi-chevron-right small ms-1"></i></a>
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Title & Description -->
+
+        <!-- Devices -->
+        <div class="devices-top-start-50 devices-rotated zi-2" style="top: auto; width: 47rem;">
+          <div class="devices-wrap devices-rotated-body">
+            <!-- Tablet Device -->
+            <figure class="device-tablet" style="width: 27rem;">
+              <div class="device-tablet-frame">
+                <img class="device-tablet-img" src="./assets/img/hero01.jpg" alt="skupina lidí ve fotbalové brance">
+              </div>
+            </figure>
+            <!-- End Tablet Device -->
+
+            <!-- Vertical Tablet Device -->
+            <figure class="device-vertical-tablet" style="width: 18rem;">
+              <div class="device-vertical-tablet-frame">
+                <img class="device-vertical-tablet-img" src="./assets/img/hero02.png" alt="diagram routování v síti">
+              </div>
+            </figure>
+            <!-- End Vertical Tablet Device -->
+
+            <!-- Mobile Device -->
+            <figure class="device-mobile align-self-start" style="width: 10rem;">
+              <div class="device-mobile-frame">
+                <img class="device-mobile-img" src="./assets/img/hero03.png" alt="diagramy doručování uzlům metodou unicast, broadcast a anycast">
+              </div>
+            </figure>
+            <!-- End Mobile Device -->
+
+            <!-- Browser Device -->
+            <figure class="device-browser" style="width: 35rem;">
+              <div class="device-browser-header">
+                <div class="device-browser-header-btn-list">
+                  <span class="device-browser-header-btn-list-btn"></span>
+                  <span class="device-browser-header-btn-list-btn"></span>
+                  <span class="device-browser-header-btn-list-btn"></span>
+                </div>
+                <div class="device-browser-header-browser-bar">routing.instruktori.cz</div>
+              </div>
+              <div class="device-browser-frame">
+                <img class="device-browser-img" src="./assets/img/hero04.jpg" alt="skupina lidí se rozbíhá na louce">
+              </div>
+            </figure>
+            <!-- End Browser Device -->
+          </div>
+        </div>
+        <!-- End Devices -->
+      </div>
+
+      <!-- Shape -->
+      <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+          <path fill="#eef5ff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+        </svg>
+      </div>
+      <!-- End Shape -->
+
+    </div>
+    <!-- End Hero -->
+    <!-- Card Grid -->
+    <div class="overflow-hidden js-scrollspy" id="about">
+      <div class="container position-relative content-space-1 content-space-b-3 content-space-lg-3">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <span class="text-cap">O hře</span>
+          <h2>Jaké to bude?</h2>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row g-5">
+          <!-- Card -->
+          <div class="col-12 col-lg-6" data-aos="fade-right">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-6 col-sm-4 p-0 align-self-center">
+                  <img class="img-fluid p-4 pb-0 pb-sm-4 pe-sm-0" src="./assets/svg/oc-maintenance.svg" alt="lidé se domlouvají na louce">
+                </div>
+                <div class="col-sm-8 p-0">
+                  <div class="card-body pt-3 pt-sm-5">
+                    <h3 class="card-title text-primary">Týmová strategická hra</h3>
+                    <p class="card-text">Vás pětičlenný tým se utká s&nbsp;ostatními týmy v&nbsp;několika kolech routování v&nbsp;síti. Pouze ta nejlepší strategie zvítězí!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Card -->
+          <!-- Card -->
+          <div class="col-12 col-lg-6" data-aos="fade-left">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-6 col-sm-4 p-0 align-self-center">
+                  <img class="img-fluid p-4 pb-0 pb-sm-4 pe-sm-0" src="./assets/svg/oc-hi-five.svg" alt="lidé si dávají Hi-five">
+                </div>
+                <div class="col-sm-8 p-0">
+                  <div class="card-body pt-3 pt-sm-5">
+                    <h3 class="card-title text-primary">Všichni jsou vítaní</h3>
+                    <p class="card-text">Nemusíš být "ajťák" ani mít znalosti o tom, jak fungují počítačové sítě – tvoje strategie může i přesto zvítězit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Card -->
+          <!-- Card -->
+          <div class="col-12 col-lg-6" data-aos="fade-right">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-6 col-sm-4 p-0 align-self-center">
+                  <img class="img-fluid p-4 pb-0 pb-sm-4 pe-sm-0" src="./assets/svg/oc-growing.svg" alt="člověk vystupuje po schodech">
+                </div>
+                <div class="col-sm-8 p-0">
+                  <div class="card-body pt-3 pt-sm-5">
+                    <h3 class="card-title text-primary">Bude to velké</h3>
+                    <p class="card-text">Cílíme na 100–120 účastníků celkem. Takže se zamysli a pozvi i všechny přátele (hlavně ty, které chceš porazit!).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Card -->
+          <!-- Card -->
+          <div class="col-12 col-lg-6" data-aos="fade-left">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-6 col-sm-4 p-0 align-self-center">
+                  <img class="img-fluid p-4 pb-0 pb-sm-4 pe-sm-0" src="./assets/svg/oc-looking-for-answers.svg" alt="člověk sedí nad knihami">
+                </div>
+                <div class="col-sm-8 p-0">
+                  <div class="card-body pt-3 pt-sm-5">
+                    <h3 class="card-title text-primary">Učebnice nech doma</h3>
+                    <p class="card-text">Nestuduj teoreticky, přijď si zahrát a tu nejlepší směrovací strategii vymyslíš přímo v&nbsp;terénu. Žádné teoretické poučky!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </div>
+    <!-- End Card Grid -->
+    <!-- Icon Blocks -->
+    <div class="overflow-hidden bg-light js-scrollspy" id="practicalities">
+      <div class="container position-relative content-space-2 content-space-lg-3">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <span class="text-cap">Prakticky</span>
+          <h2>Všechno, co o akci potřebuješ vědět</h2>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M14.1 15.013C14.6 16.313 14.5 17.813 13.7 19.113C12.3 21.513 9.29999 22.313 6.89999 20.913C5.29999 20.013 4.39999 18.313 4.39999 16.613C5.09999 17.013 5.99999 17.313 6.89999 17.313C8.39999 17.313 9.69998 16.613 10.7 15.613C11.1 15.713 11.5 15.813 11.9 15.813C12.7 15.813 13.5 15.513 14.1 15.013ZM8.5 12.913C8.5 12.713 8.39999 12.513 8.39999 12.313C8.39999 11.213 8.89998 10.213 9.69998 9.613C9.19998 8.313 9.30001 6.813 10.1 5.513C10.6 4.713 11.2 4.11299 11.9 3.71299C10.4 2.81299 8.49999 2.71299 6.89999 3.71299C4.49999 5.11299 3.70001 8.113 5.10001 10.513C5.80001 11.813 7.1 12.613 8.5 12.913ZM16.9 7.313C15.4 7.313 14.1 8.013 13.1 9.013C14.3 9.413 15.1 10.513 15.3 11.713C16.7 12.013 17.9 12.813 18.7 14.113C19.2 14.913 19.3 15.713 19.3 16.613C20.8 15.713 21.8 14.113 21.8 12.313C21.9 9.513 19.7 7.313 16.9 7.313Z" fill="#035A4B" />
+                  <path d="M9.69998 9.61307C9.19998 8.31307 9.30001 6.81306 10.1 5.51306C11.5 3.11306 14.5 2.31306 16.9 3.71306C18.5 4.61306 19.4 6.31306 19.4 8.01306C18.7 7.61306 17.8 7.31306 16.9 7.31306C15.4 7.31306 14.1 8.01306 13.1 9.01306C12.7 8.91306 12.3 8.81306 11.9 8.81306C11.1 8.81306 10.3 9.11307 9.69998 9.61307ZM8.5 12.9131C7.1 12.6131 5.90001 11.8131 5.10001 10.5131C4.60001 9.71306 4.5 8.91306 4.5 8.01306C3 8.91306 2 10.5131 2 12.3131C2 15.1131 4.2 17.3131 7 17.3131C8.5 17.3131 9.79999 16.6131 10.8 15.6131C9.49999 15.1131 8.7 14.1131 8.5 12.9131ZM18.7 14.1131C17.9 12.8131 16.7 12.0131 15.3 11.7131C15.3 11.9131 15.4 12.1131 15.4 12.3131C15.4 13.4131 14.9 14.4131 14.1 15.0131C14.6 16.3131 14.5 17.8131 13.7 19.1131C13.2 19.9131 12.6 20.5131 11.9 20.9131C13.4 21.8131 15.3 21.9131 16.9 20.9131C19.3 19.6131 20.1 16.5131 18.7 14.1131Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>5členné týmy</h4>
+              <p>Jde o kompetitivní hru týmů o přesně 5 členech (ne víc, ne míň). V době registrace nemusíš znát jména všech hráčů, viz <a href="#faq">FAQ níže</a></p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z" fill="#035A4B" />
+                  <path d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z" fill="#035A4B" />
+                  <path d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>sobota na jaře 2025<!--(<a href="./assets/other/routing-game.ics">iCal</a>)--></h4>
+              <p>Hra začne odpoledne a poběží několik hodin. Večer předpokládáme spontánní kytarohraní a budeme rádi, když zůstaneš a pokecáš</p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M13.625 22H9.625V3C9.625 2.4 10.025 2 10.625 2H12.625C13.225 2 13.625 2.4 13.625 3V22Z" fill="#035A4B" />
+                  <path d="M19.625 10H12.625V4H19.625L21.025 6.09998C21.325 6.59998 21.325 7.30005 21.025 7.80005L19.625 10Z" fill="#035A4B" />
+                  <path d="M3.62499 16H10.625V10H3.62499L2.225 12.1001C1.925 12.6001 1.925 13.3 2.225 13.8L3.62499 16Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>Brno, Líšeňská rokle (<a href="https://en.mapy.cz/s/fomecunajo" target="_blank">mapa</a>)</h4>
+              <p>Hra bude probíhat v Líšeňské rokli – dostaneš se tam snadno šalinou č. 8 (ze které vystoupíš na zastávce Kotlanova), nebo trolejbusem 27 (vystup na zastávce Rotreklova)</p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#035A4B" />
+                  <path d="M13.643 9.36206C13.6427 9.05034 13.7663 8.75122 13.9864 8.53052C14.2065 8.30982 14.5053 8.18559 14.817 8.18506H15.992V5.23999H13.643C13.1796 5.24052 12.7209 5.33229 12.293 5.51013C11.8651 5.68798 11.4764 5.94841 11.1491 6.27649C10.8219 6.60457 10.5625 6.99389 10.3857 7.42224C10.209 7.85059 10.1183 8.30956 10.119 8.77295V11.718H7.769V14.663H10.119V21.817C11.2812 22.0479 12.4762 22.0604 13.643 21.854V14.663H15.992L17.167 11.718H13.643V9.36206Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>Přehled účastníků</h4>
+              <p>Používáš-li Facebook, <a href="https://www.facebook.com/events/418667391152830/" target="_blank">přidej se do události</a> – uvidíš, kdo další se na akci chystá a budeš mít přehled o aktualitách</p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M12.5 22C11.9 22 11.5 21.6 11.5 21V3C11.5 2.4 11.9 2 12.5 2C13.1 2 13.5 2.4 13.5 3V21C13.5 21.6 13.1 22 12.5 22Z" fill="#035A4B" />
+                  <path d="M17.8 14.7C17.8 15.5 17.6 16.3 17.2 16.9C16.8 17.6 16.2 18.1 15.3 18.4C14.5 18.8 13.5 19 12.4 19C11.1 19 10 18.7 9.10001 18.2C8.50001 17.8 8.00001 17.4 7.60001 16.7C7.20001 16.1 7 15.5 7 14.9C7 14.6 7.09999 14.3 7.29999 14C7.49999 13.8 7.80001 13.6 8.20001 13.6C8.50001 13.6 8.69999 13.7 8.89999 13.9C9.09999 14.1 9.29999 14.4 9.39999 14.7C9.59999 15.1 9.8 15.5 10 15.8C10.2 16.1 10.5 16.3 10.8 16.5C11.2 16.7 11.6 16.8 12.2 16.8C13 16.8 13.7 16.6 14.2 16.2C14.7 15.8 15 15.3 15 14.8C15 14.4 14.9 14 14.6 13.7C14.3 13.4 14 13.2 13.5 13.1C13.1 13 12.5 12.8 11.8 12.6C10.8 12.4 9.99999 12.1 9.39999 11.8C8.69999 11.5 8.19999 11.1 7.79999 10.6C7.39999 10.1 7.20001 9.39998 7.20001 8.59998C7.20001 7.89998 7.39999 7.19998 7.79999 6.59998C8.19999 5.99998 8.80001 5.60005 9.60001 5.30005C10.4 5.00005 11.3 4.80005 12.3 4.80005C13.1 4.80005 13.8 4.89998 14.5 5.09998C15.1 5.29998 15.6 5.60002 16 5.90002C16.4 6.20002 16.7 6.6 16.9 7C17.1 7.4 17.2 7.69998 17.2 8.09998C17.2 8.39998 17.1 8.7 16.9 9C16.7 9.3 16.4 9.40002 16 9.40002C15.7 9.40002 15.4 9.29995 15.3 9.19995C15.2 9.09995 15 8.80002 14.8 8.40002C14.6 7.90002 14.3 7.49995 13.9 7.19995C13.5 6.89995 13 6.80005 12.2 6.80005C11.5 6.80005 10.9 7.00005 10.5 7.30005C10.1 7.60005 9.79999 8.00002 9.79999 8.40002C9.79999 8.70002 9.9 8.89998 10 9.09998C10.1 9.29998 10.4 9.49998 10.6 9.59998C10.8 9.69998 11.1 9.90002 11.4 9.90002C11.7 10 12.1 10.1 12.7 10.3C13.5 10.5 14.2 10.7 14.8 10.9C15.4 11.1 15.9 11.4 16.4 11.7C16.8 12 17.2 12.4 17.4 12.9C17.6 13.4 17.8 14 17.8 14.7Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>150 Kč / účastník</h4>
+              <p>Startovné platí kapitán týmu za celý tým převodem na účet po registraci týmu a přidělení variabilního symbolu</p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 my-5">
+            <!-- Icon Blocks -->
+            <div class="text-center pe-lg-6">
+              <span class="svg-icon text-primary mb-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#035A4B" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.591 13.209V14.868H11.851C14.392 14.868 16.387 12.915 16.387 10.395C16.387 7.875 14.392 5.922 11.851 5.922C9.31 5.922 7.336 7.875 7.336 10.395H9.121C9.121 8.799 10.234 7.581 11.851 7.581C13.447 7.581 14.602 8.799 14.602 10.395C14.602 11.991 13.447 13.209 11.851 13.209H10.591ZM12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16Z" fill="#035A4B" />
+                </svg>
+
+              </span>
+
+              <h4>Nevíš? Napiš!</h4>
+              <p>Je něco důležitého, co bys potřeboval vědět a není to tady? Jestli to nenajdeš ani ve <a href="#faq">FAQ níže</a>, napiš nám na <a href="mailto:routing@instruktori.cz" target="_blank">routing@instruktori.cz</a></p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <!-- SVG Shape -->
+        <figure class="position-absolute zi-n1" style="top: -25rem; left: 40rem; width: 62rem; height: 62rem;">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+            <circle fill="#BDD5FF" opacity=".3" cx="130" cy="130" r="130" />
+          </svg>
+        </figure>
+        <!-- End SVG Shape -->
+      </div>
+    </div>
+    <!-- End Icon Blocks -->
+    <!-- Content -->
+    <div class="d-md-flex js-scrollspy" id="signup">
+      <div class="container d-md-flex align-items-md-center content-space-2 content-space-lg-3">
+        <div class="row justify-content-md-between align-items-md-center flex-grow-1">
+          <div class="col-9 col-md-5 mb-5 mb-md-0">
+            <img class="img-fluid" src="./assets/svg/signup.svg" alt="člověk s megafonem">
+          </div>
+          <!-- End Col -->
+
+          <div class="col-md-6">
+            <!-- Heading -->
+            <div class="mb-4">
+              <span class="text-cap">Přihlásit tým</span>
+              <h2 class="mb-3">Před-registrace týmů</h3>
+                <p class="mb-5">Zaregistruj se jako kapitán týmu. Až stanovíme nový termín hry, ozveme se ti. <!--Následně se ti ozveme s žádostí o doplnění informací o ostatních členech týmu a informacemi o platbě.--></p>
+            </div>
+            <!-- End Heading -->
+
+            <!-- gForm embedded based on https://blog.webjeda.com/google-form-customize/ and https://pqvst.com/2021/12/28/custom-google-forms/ -->
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {
+                document.getElementById('registrationSuccessful2').style.display='flex';
+              }"></iframe>
+            <form method="post" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9muRySJJtI4lKmp6IEwdCKwcSBaPrV5qPR9i0h0VlZlicjA/formResponse">
+              <!-- Input Card -->
+              <div class="input-card input-card-sm border">
+                <div class="input-card-form">
+                  <label for="subscribeForm" class="form-label visually-hidden">Email</label>
+                  <input name="entry.595497343" type="email" class="form-control form-control-lg" id="subscribeForm" placeholder="Emailová adresa" aria-label="Enter email" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Registrovat se</button>
+              </div>
+              <p class="mt-1 fs-6">Pouze pro účely registrace, <a href="https://www.instruktori.cz/zasady-zpracovani-osobnich-udaju/" target="_blank">zásady zpracování osobních údajů</a>.</p>
+              <!-- End Input Card -->
+            </form>
+            <div class="mt-5 flex-row" id="registrationSuccessful2" style="display: none;">
+              <div class="svg-icon text-primary me-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M10.3 14.3L11 13.6L7.70002 10.3C7.30002 9.9 6.7 9.9 6.3 10.3C5.9 10.7 5.9 11.3 6.3 11.7L10.3 15.7C9.9 15.3 9.9 14.7 10.3 14.3Z" fill="#035A4B" />
+                  <path d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM11.7 15.7L17.7 9.70001C18.1 9.30001 18.1 8.69999 17.7 8.29999C17.3 7.89999 16.7 7.89999 16.3 8.29999L11 13.6L7.70001 10.3C7.30001 9.89999 6.69999 9.89999 6.29999 10.3C5.89999 10.7 5.89999 11.3 6.29999 11.7L10.3 15.7C10.5 15.9 10.8 16 11 16C11.2 16 11.5 15.9 11.7 15.7Z" fill="#035A4B" />
+                </svg>
+
+              </div>
+              <div>
+                <h3 class="text-primary">
+                  Předregistrace odeslána, děkujeme.
+                </h3>
+                <p>Potvrzení o registraci jsme ti odeslali na email.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+    <!-- End Content -->
+    <!-- FAQ -->
+
+    <div class="overflow-hidden bg-light js-scrollspy" id="faq">
+      <div class="container position-relative content-space-2 content-space-lg-3">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+          <span class="text-cap">FAQ</span>
+          <h2>Všechno další, co by tě mohlo zajímat</h2>
+        </div>
+        <!-- End Heading -->
+
+        <div class="w-lg-65 mx-lg-auto">
+          <!-- Accordion -->
+          <div class="accordion accordion-flush accordion-lg" id="accordionFAQ">
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQOne">
+                <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Co si mám představit pod strategickou týmovou hrou?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingFAQOne" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  V The Routing Game budete spolupracovat v menších týmech s cílem porazit ostatní týmy. Budete mít příležitost vymyslet a vyzkoušet co nejlepší taktiky a strategie pro zvýšení efektivity komunikace v síti.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQTwo">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Musí mít náš tým přesně 5 členů?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingFAQTwo" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Ano. Kvůli logistice hry je potřeba být součástí přesně 5členného týmu. Nemusíš však vědět jména všech svých spoluhráčů hned – tým registruje kapitán, který později vyplní jména všech hráčů (hráči se můžou až do pár dní před hrou i měnit).
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQThree">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Co máme dělat, když nám vypadl/onemocněl jeden hráč těsně před hrou?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingFAQThree" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Ideálně se pokuste sehnat někoho jako náhradu. Jestli to nevyjde, stejně přiďte, ale dejte nám to prosím vědět emailem na <a href="mailto:routing@instruktori.cz" target="_blank">routing@instruktori.cz</a>. My se to pokusíme nějak vymyslet, abyste se i tak mohli hry účastnit.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQFour">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Musím být ajťák?
+                </a>
+              </div>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFAQFour" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Rozhodně ne! Hra je pro všechny a není potřeba mít jakékoliv informatické znalosti. Hodit se ale bude zvědavost, kreativita a chuť zkoušet nové věci a taktiky.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQFive">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Co zahrnuje cena?
+                </a>
+              </div>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFAQFive" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Cena zahrnuje náklady na materiál potřebný na hru. Akce je nezisková, tj. organizátoři hru připravují dobrovolně ve svém volném čase bez nároku na odměnu.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQSix">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Jaké jsou storno podmínky?
+                </a>
+              </div>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFAQSix" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Storno poplatek při odhlášení týmu závisí na datu odhlášení následovně:
+                  <ul>
+                    <li>Odhlášení více než 30 dní před započetím akce: vracíme 70 % účastnického poplatku</li>
+                    <li>Odhlášení 30 až 10 dní před začátkem akce: vracíme 50 % účastnického poplatku</li>
+                    <li>Odhlášení 9 dní až 1 den před začátkem akce vracíme 10 % účastnického poplatku</li>
+                    <li>Odhlášení v den započetí akce či později: v této době již bohužel nemůžeme slíbit vrácení žádné části poplatku</li>
+                  </ul>
+                  V případě zrušení akce ze strany organizátorů vrátíme 100 % účastnického poplatku.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQSeven">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Můžeme se registrovat, i když nikomu v našem týmu ještě nebylo 18 let?
+                </a>
+              </div>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingFAQSeven" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Ano, hra je přístupná i zvědavým středoškolákům. Je však nutné, aby všem účastníkům v týmu již bylo 15 (nebo přišli se svým zákonným zástupcem).
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFAQEight">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Mám jinou otázku…
+                </a>
+              </div>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingFAQEight" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Super! Neváhej a napiš nám na email <a href="mailto:routing@instruktori.cz" target="_blank">routing@instruktori.cz</a>.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+          </div>
+          <!-- End Accordion -->
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ -->
+    <!-- Team -->
+    <div class="container content-space-2 content-space-lg-3" id="team">
+      <!-- Heading -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="d-block small font-weight-bold text-cap mb-2">Organizátoři</span>
+        <h2>Kdo pro tebe hru připravuje?</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="row g-5">
+        <div class="col-sm-6 col-md-4">
+          <!-- Team -->
+          <img class="card-img rounded-2" src="./assets/img/team-martin.jpg" alt="fotka Martin Ukrop">
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">Martin Ukrop</h4>
+              <p class="card-text mb-2"><em>Ajťák, výzkumník, učitel, táta.</em></p>
+              <p class="card-text">Koordinuji tým a jednotlivé věci dohromady, starám se o web a komunikaci s úřady.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Team -->
+          <img class="card-img rounded-2" src="./assets/img/team-honza.jpg" alt="fotka Honza Mrázek">
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">Honza Mrázek</h4>
+              <p class="card-text mb-2"><em>Výzkumník a bastlíř, který se ve všem snaží posunovat hranice.</em></p>
+              <p class="card-text">Zajišťuji, že věci pípají kdy mají a jak mají.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Team -->
+          <img class="card-img rounded-2" src="./assets/img/team-maara.jpg" alt="fotka Maara">
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">Jiří "Maara" Marek</h4>
+              <p class="card-text mb-2"><em>Gamer, pohodář a výletník</em></p>
+              <p class="card-text">Starám se o pravidla a o to, abyste správně dostali všechny body.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Team -->
+          <img class="card-img rounded-2" src="./assets/img/team-ondra.jpg" alt="fotka Ondra Bouda">
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">Ondra Bouda</h4>
+              <p class="card-text mb-2"><em>Univerzální programátor, neinstruktor, amatérský sborový zpěvák.</em></p>
+              <p class="card-text">Programuji server a potřebuji, aby věci dávaly smysl.</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm-6 col-md-4">
+          <!-- Team -->
+          <img class="card-img rounded-2" src="./assets/img/team-eliska.jpg" alt="fotka Eliška Uhlířová">
+          <div class="card card-sm text-center mt-n7 mx-3">
+            <div class="card-body">
+              <h4 class="card-title">Eliška Uhlířová</h4>
+              <p class="card-text mb-2"><em>Studentka, učitelka, milovnice přírody a dobré kávy.</em></p>
+              <p class="card-text">Zajišťuji, abyste přišli. Už jste se zaregistrovali? 👀 #budetovelky</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+    </div>
+    <!-- End Team -->
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <!-- ========== FOOTER ========== -->
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container content-space-2 text-center">
+      <!-- Logo -->
+      <a class="d-inline-flex align-items-center mb-3" href="https://instruktori.cz" aria-label="Front">
+        <img class="brand mb-2" src="./assets/svg/logo-is.svg" alt="logo Instruktoři Brno">
+      </a>
+      <!-- End Logo -->
+
+      <p class="fs-6 mb-1 text-white-50">The Routing Game organizuje spolek zážitkové pedagogiky <a class="link-light" href="https://instruktori.cz">Instruktoři Brno</a>.</p>
+      <p class="fs-6 mb-1 text-white-50">V případě dotazů napiš na <a class="link-light" href="mailto:routing@instruktori.cz" target="_blank">routing@instruktori.cz</a>.</p>
+      <p class="fs-6 text-white-50"><a class="link-light" href="https://www.instruktori.cz/zasady-zpracovani-osobnich-udaju/" target="_blank">Zásady zpracování osobních údajů</a></p>
+
+      <!-- Socials -->
+      <ul class="list-inline mt-5 mb-0">
+        <li class="list-inline-item">
+          <a class="btn btn-ghost-secondary btn-lg btn-icon rounded-circle" target="_blank" href="https://www.facebook.com/instruktori.brno">
+            <span class="svg-icon-small">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#035A4B" />
+                <path d="M13.643 9.36206C13.6427 9.05034 13.7663 8.75122 13.9864 8.53052C14.2065 8.30982 14.5053 8.18559 14.817 8.18506H15.992V5.23999H13.643C13.1796 5.24052 12.7209 5.33229 12.293 5.51013C11.8651 5.68798 11.4764 5.94841 11.1491 6.27649C10.8219 6.60457 10.5625 6.99389 10.3857 7.42224C10.209 7.85059 10.1183 8.30956 10.119 8.77295V11.718H7.769V14.663H10.119V21.817C11.2812 22.0479 12.4762 22.0604 13.643 21.854V14.663H15.992L17.167 11.718H13.643V9.36206Z" fill="#035A4B" />
+              </svg>
+
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-ghost-secondary btn-lg btn-icon rounded-circle" target="_blank" href="https://www.instagram.com/instruktoribrno/">
+            <span class="svg-icon-small">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M22 8.20267V15.7027C22 19.1027 19.2 22.0026 15.7 22.0026H8.2C4.8 22.0026 2 19.2027 2 15.7027V8.20267C2 4.80267 4.8 2.0026 8.2 2.0026H15.7C19.2 1.9026 22 4.70267 22 8.20267ZM12 7.30265C9.5 7.30265 7.39999 9.40262 7.39999 11.9026C7.39999 14.4026 9.5 16.5026 12 16.5026C14.5 16.5026 16.6 14.4026 16.6 11.9026C16.6 9.30262 14.5 7.30265 12 7.30265ZM17.9 5.0026C17.3 5.0026 16.9 5.4026 16.9 6.0026C16.9 6.6026 17.3 7.0026 17.9 7.0026C18.5 7.0026 18.9 6.6026 18.9 6.0026C18.9 5.5026 18.4 5.0026 17.9 5.0026Z" fill="#035A4B" />
+                <path d="M12 17.5026C8.9 17.5026 6.39999 15.0026 6.39999 11.9026C6.39999 8.80259 8.9 6.30261 12 6.30261C15.1 6.30261 17.6 8.80259 17.6 11.9026C17.6 15.0026 15.1 17.5026 12 17.5026ZM12 8.30261C10 8.30261 8.39999 9.90259 8.39999 11.9026C8.39999 13.9026 10 15.5026 12 15.5026C14 15.5026 15.6 13.9026 15.6 11.9026C15.6 9.90259 14 8.30261 12 8.30261Z" fill="#035A4B" />
+              </svg>
+
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-ghost-secondary btn-lg btn-icon rounded-circle" target="_blank" href="https://www.instruktori.cz/">
+            <span class="svg-icon-small">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M21 22H3C2.4 22 2 21.6 2 21V5C2 4.4 2.4 4 3 4H21C21.6 4 22 4.4 22 5V21C22 21.6 21.6 22 21 22Z" fill="#035A4B" />
+                <path d="M6 6C5.4 6 5 5.6 5 5V3C5 2.4 5.4 2 6 2C6.6 2 7 2.4 7 3V5C7 5.6 6.6 6 6 6ZM11 5V3C11 2.4 10.6 2 10 2C9.4 2 9 2.4 9 3V5C9 5.6 9.4 6 10 6C10.6 6 11 5.6 11 5ZM15 5V3C15 2.4 14.6 2 14 2C13.4 2 13 2.4 13 3V5C13 5.6 13.4 6 14 6C14.6 6 15 5.6 15 5ZM19 5V3C19 2.4 18.6 2 18 2C17.4 2 17 2.4 17 3V5C17 5.6 17.4 6 18 6C18.6 6 19 5.6 19 5Z" fill="#035A4B" />
+                <path d="M8.8 13.1C9.2 13.1 9.5 13 9.7 12.8C9.9 12.6 10.1 12.3 10.1 11.9C10.1 11.6 10 11.3 9.8 11.1C9.6 10.9 9.3 10.8 9 10.8C8.8 10.8 8.59999 10.8 8.39999 10.9C8.19999 11 8.1 11.1 8 11.2C7.9 11.3 7.8 11.4 7.7 11.6C7.6 11.8 7.5 11.9 7.5 12.1C7.5 12.2 7.4 12.2 7.3 12.3C7.2 12.4 7.09999 12.4 6.89999 12.4C6.69999 12.4 6.6 12.3 6.5 12.2C6.4 12.1 6.3 11.9 6.3 11.7C6.3 11.5 6.4 11.3 6.5 11.1C6.6 10.9 6.8 10.7 7 10.5C7.2 10.3 7.49999 10.1 7.89999 10C8.29999 9.90003 8.60001 9.80003 9.10001 9.80003C9.50001 9.80003 9.80001 9.90003 10.1 10C10.4 10.1 10.7 10.3 10.9 10.4C11.1 10.5 11.3 10.8 11.4 11.1C11.5 11.4 11.6 11.6 11.6 11.9C11.6 12.3 11.5 12.6 11.3 12.9C11.1 13.2 10.9 13.5 10.6 13.7C10.9 13.9 11.2 14.1 11.4 14.3C11.6 14.5 11.8 14.7 11.9 15C12 15.3 12.1 15.5 12.1 15.8C12.1 16.2 12 16.5 11.9 16.8C11.8 17.1 11.5 17.4 11.3 17.7C11.1 18 10.7 18.2 10.3 18.3C9.9 18.4 9.5 18.5 9 18.5C8.5 18.5 8.1 18.4 7.7 18.2C7.3 18 7 17.8 6.8 17.6C6.6 17.4 6.4 17.1 6.3 16.8C6.2 16.5 6.10001 16.3 6.10001 16.1C6.10001 15.9 6.2 15.7 6.3 15.6C6.4 15.5 6.6 15.4 6.8 15.4C6.9 15.4 7.00001 15.4 7.10001 15.5C7.20001 15.6 7.3 15.6 7.3 15.7C7.5 16.2 7.7 16.6 8 16.9C8.3 17.2 8.6 17.3 9 17.3C9.2 17.3 9.5 17.2 9.7 17.1C9.9 17 10.1 16.8 10.3 16.6C10.5 16.4 10.5 16.1 10.5 15.8C10.5 15.3 10.4 15 10.1 14.7C9.80001 14.4 9.50001 14.3 9.10001 14.3C9.00001 14.3 8.9 14.3 8.7 14.3C8.5 14.3 8.39999 14.3 8.39999 14.3C8.19999 14.3 7.99999 14.2 7.89999 14.1C7.79999 14 7.7 13.8 7.7 13.7C7.7 13.5 7.79999 13.4 7.89999 13.2C7.99999 13 8.2 13 8.5 13H8.8V13.1ZM15.3 17.5V12.2C14.3 13 13.6 13.3 13.3 13.3C13.1 13.3 13 13.2 12.9 13.1C12.8 13 12.7 12.8 12.7 12.6C12.7 12.4 12.8 12.3 12.9 12.2C13 12.1 13.2 12 13.6 11.8C14.1 11.6 14.5 11.3 14.7 11.1C14.9 10.9 15.2 10.6 15.5 10.3C15.8 10 15.9 9.80003 15.9 9.70003C15.9 9.60003 16.1 9.60004 16.3 9.60004C16.5 9.60004 16.7 9.70003 16.8 9.80003C16.9 9.90003 17 10.2 17 10.5V17.2C17 18 16.7 18.4 16.2 18.4C16 18.4 15.8 18.3 15.6 18.2C15.4 18.1 15.3 17.8 15.3 17.5Z" fill="#035A4B" />
+              </svg>
+
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-ghost-secondary btn-lg btn-icon rounded-circle" target="_blank" href="mailto:routing@instruktori.cz">
+            <span class="svg-icon-small">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19Z" fill="#035A4B" />
+                <path d="M21 5H2.99999C2.69999 5 2.49999 5.10005 2.29999 5.30005L11.2 13.3C11.7 13.7 12.4 13.7 12.8 13.3L21.7 5.30005C21.5 5.10005 21.3 5 21 5Z" fill="#035A4B" />
+              </svg>
+
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!-- End Socials -->
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/aos/dist/aos.js"></script>
+  <script src="./assets/vendor/typed.js/dist/typed.umd.js"></script>
+  <script src="./assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+      
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+      
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      HSCore.components.HSTyped.init('.js-typedjs')
+      
+      // INITIALIZATION OF SCROLLSPY
+      // =======================================================
+      new bootstrap.ScrollSpy(document.body, {
+        target: '#navbarSettings',
+        offset: 10
+      })
+      
+      //new HSScrollspy('#navbarVerticalNavMenuEg', {
+        //  breakpoint: 'lg'
+        //})
+        
+      })()
+    </script>
+</body>
+</html>
